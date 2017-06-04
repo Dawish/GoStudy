@@ -1,7 +1,8 @@
 package main
-
+//demo:-> https://gobyexample.com/
 import (
 	"fmt"
+	"strconv"
 )
 
 var( //全局变量
@@ -78,4 +79,22 @@ func printPBook(bookP *Book)  {
 	fmt.Printf( "Book name : %s\n", bookP.name)
 	fmt.Printf( "Book year : %s\n", bookP.year)
 	fmt.Printf( "Book id : %d\n", bookP.id)
+	byteTest()
+}
+
+func byteTest()  {
+	var byte1  = [4]float32{12.1, 32.2, 2.0, 21}  //数组
+	var byte2  = [4]string{}
+
+	fmt.Println("使用数组：", byte1[1])
+
+	for  i:=0;i<len(byte2);i++{ // for循环数组赋值
+		var temp  = "数组item值：" + strconv.Itoa(i)  //类型转换
+		byte2[i] = temp
+	}
+
+	for  j:=0;j<len(byte2);j++{ // for循环
+		fmt.Println("数组item值--->", byte2[j])
+	}
+
 }
