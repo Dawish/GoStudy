@@ -1,5 +1,6 @@
 package main
 //demo:-> https://gobyexample.com/
+// golang开源库:mgo nsq etcd consul
 import (
 	"fmt"
 	"strconv"
