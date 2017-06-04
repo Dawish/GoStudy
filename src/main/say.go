@@ -26,4 +26,16 @@ func main(){
 	fmt.Println(aa , ab, ac)
 
 	fmt.Println(goo, doo)
+
+	var numb  = 22
+	var point *int /* 声明指针变量 */
+
+	point = &numb  /* 指针变量的存储地址 */
+
+	fmt.Println("变量地址：", &numb)
+
+	fmt.Println("point 变量储存的指针地址:：", point)
+
+	fmt.Println("使用指针访问值:", *point)
+
 }
