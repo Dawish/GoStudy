@@ -17,7 +17,7 @@ func main(){
 	var name  = "danxingxi"
 	var name1  = "go"
 	var name2  = "233 go"
-	var aa, ab, ac  = "adad","adcsw", "asdasd"
+	var aa, ab, ac  = "adad","adcsw", "asdasd" //这种赋值方式牛逼
 
 	fmt.Println( name )
 
@@ -40,4 +40,31 @@ func main(){
 
 	fmt.Println("point不是空指针：",point!=nil)
 
+	test(23)
+}
+
+type Book struct { //结构体(全局变量)
+	name string
+	year string
+	id   int
+
+}
+
+/**
+ * 定义方法 参数  返回值
+ */
+func test(num int) (string, string) {
+	fmt.Println("传入参数：", num)
+	var book1 Book
+	book1.name = "最牛逼的golang教程"
+	book1.year = "2017"
+	book1.id = 12214
+	printBook(book1)
+	return "sss","sdsds"  //方法可以返回两个参数
+}
+
+func printBook(book Book)  {
+	fmt.Printf( "Book name : %s\n", book.name)
+	fmt.Printf( "Book year : %s\n", book.year)
+	fmt.Printf( "Book id : %d\n", book.id)
 }
