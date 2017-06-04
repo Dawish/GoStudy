@@ -17,8 +17,8 @@
       <file leaf-file-name="say.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/say.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="16" />
+            <state relative-caret-position="-1766">
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               <folding>
                 <element signature="e#14#31#0" expanded="true" />
               </folding>
@@ -326,8 +326,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/say.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="16" />
+        <state relative-caret-position="-1766">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
             <element signature="e#14#31#0" expanded="true" />
           </folding>

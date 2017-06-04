@@ -62,9 +62,20 @@ func test(num int) (string, string) {
 	printBook(book1)
 	return "sss","sdsds"  //方法可以返回两个参数
 }
-
+/**
+ *参数为结构体
+ */
 func printBook(book Book)  {
 	fmt.Printf( "Book name : %s\n", book.name)
 	fmt.Printf( "Book year : %s\n", book.year)
 	fmt.Printf( "Book id : %d\n", book.id)
+	printPBook(&book)
+}
+/**
+ * 参数为结构体指针
+ */
+func printPBook(bookP *Book)  {
+	fmt.Printf( "Book name : %s\n", bookP.name)
+	fmt.Printf( "Book year : %s\n", bookP.year)
+	fmt.Printf( "Book id : %d\n", bookP.id)
 }
