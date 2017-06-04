@@ -38,4 +38,6 @@ func main(){
 
 	fmt.Println("使用指针访问值:", *point)
 
+	fmt.Println("point不是空指针：",point!=nil)
+
 }
