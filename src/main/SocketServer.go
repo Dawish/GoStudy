@@ -23,6 +23,8 @@ func main() {
 
 		Log(conn.RemoteAddr().String(), " tcp connect success")
 		handleConnection(conn)  //正常连接就处理
+		//这句代码的前面加上一个 go，就可以让服务器并发处理不同的Client发来的请求
+		//go handleConnection(conn) 使用goroutine来处理用户的请求
 	}
 }
 //处理连接
