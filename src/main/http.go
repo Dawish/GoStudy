@@ -29,7 +29,7 @@ func main()  {
 
 	// 设置访问的路由
 	http.HandleFunc("/lizhi/", httpSayHello)
-	//->http://localhost:9090/lizhi/
+	//->http://127.0.0.1:9090/lizhi/
 
 	// 设置监听的端口
 	err := http.ListenAndServe(":9090", nil)
