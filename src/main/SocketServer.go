@@ -10,7 +10,8 @@ import (
 func main() {
 
 	//建立socket，监听端口  第一步:绑定端口
-	netListen, err := net.Listen("tcp", "localhost:1024")
+	//netListen, err := net.Listen("tcp", "localhost:1024")
+	netListen, err := net.Listen("tcp", "192.168.123.27:1024")
 	CheckError(err)
 	defer netListen.Close()
 
