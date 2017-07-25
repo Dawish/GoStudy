@@ -11,7 +11,7 @@ func main() {
 
 	//建立socket，监听端口  第一步:绑定端口
 	//netListen, err := net.Listen("tcp", "localhost:1024")
-	netListen, err := net.Listen("tcp", "192.168.123.27:1024")
+	netListen, err := net.Listen("tcp", "192.168.123.27:9800")
 	CheckError(err)
 	defer netListen.Close()
 
@@ -36,7 +36,8 @@ func handleConnection(conn net.Conn) {
 	for {  //无限循环
 
 		n, err := conn.Read(buffer) //第三步:读取从该端口传来的内容
-
+		words := "ok"     //向链接中写数据
+		conn.Write([]byte(words))
 		if err != nil {
 			Log(conn.RemoteAddr().String(), " connection error: ", err)
 			return //出错后返回
